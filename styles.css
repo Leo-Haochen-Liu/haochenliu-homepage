@@ -94,9 +94,9 @@ main {
 .hero {
   min-height: 78vh;
   display: grid;
-  grid-template-columns: minmax(0, 1.04fr) minmax(320px, 0.96fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(240px, 0.42fr);
   align-items: center;
-  gap: 38px;
+  gap: 48px;
   padding: 34px 0 28px;
 }
 
@@ -168,28 +168,19 @@ h3 {
 }
 
 .hero-media {
-  display: grid;
-  grid-template-columns: 0.64fr 1fr;
-  align-items: end;
-  gap: 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.portrait,
-.robot-image {
+.portrait {
+  width: min(100%, 320px);
   border: 1px solid var(--line);
   border-radius: 8px;
   object-fit: cover;
   background: var(--paper);
-}
-
-.portrait {
   aspect-ratio: 3 / 4;
   object-position: center center;
-}
-
-.robot-image {
-  aspect-ratio: 4 / 5;
-  object-position: 46% center;
 }
 
 .section {
@@ -253,18 +244,6 @@ h3 {
   grid-template-columns: 180px minmax(0, 1fr);
   gap: 18px;
   padding: 18px;
-}
-
-.work-item.with-image {
-  grid-template-columns: 220px minmax(0, 1fr);
-  align-items: center;
-}
-
-.work-item.with-image img {
-  aspect-ratio: 5 / 3;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid var(--line);
 }
 
 .work-date,
@@ -334,7 +313,6 @@ h3 {
   .focus-grid,
   .split,
   .work-item,
-  .work-item.with-image,
   .timeline div {
     grid-template-columns: 1fr;
   }
@@ -353,11 +331,7 @@ h3 {
   }
 
   .hero-media {
-    grid-template-columns: 0.75fr 1fr;
-  }
-
-  .work-item.with-image img {
-    max-height: 240px;
+    justify-content: flex-start;
   }
 }
 
@@ -372,16 +346,7 @@ h3 {
     gap: 10px;
   }
 
-  .hero-media {
-    grid-template-columns: 1fr;
-    justify-items: start;
-  }
-
   .portrait {
     max-width: 205px;
-  }
-
-  .robot-image {
-    display: none;
   }
 }
