@@ -174,7 +174,7 @@ h3 {
 }
 
 .portrait {
-  width: min(100%, 320px);
+  width: min(100%, 280px);
   border: 1px solid var(--line);
   border-radius: 8px;
   object-fit: cover;
@@ -347,6 +347,6 @@ h3 {
   }
 
   .portrait {
-    max-width: 205px;
+    max-width: 190px;
   }
 }
