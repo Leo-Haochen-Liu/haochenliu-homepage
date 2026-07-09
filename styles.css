@@ -208,6 +208,7 @@ h3 {
 
 .focus-item,
 .panel,
+.publication-item,
 .work-item {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -221,6 +222,7 @@ h3 {
 
 .focus-item p,
 .panel p,
+.publication-body p,
 .work-body p,
 .timeline p,
 .plain-list {
@@ -229,9 +231,41 @@ h3 {
 }
 
 .focus-item p,
+.publication-body p,
 .work-body p,
 .timeline p {
   margin-bottom: 0;
+}
+
+.publication-item {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 18px;
+  padding: 18px;
+}
+
+.publication-meta {
+  color: var(--amber);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.88rem;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.paper-links a {
+  color: var(--blue);
+  font-size: 0.92rem;
+  font-weight: 680;
+  text-decoration: none;
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
 }
 
 .work-list {
@@ -312,6 +346,7 @@ h3 {
   .hero,
   .focus-grid,
   .split,
+  .publication-item,
   .work-item,
   .timeline div {
     grid-template-columns: 1fr;
