@@ -392,9 +392,16 @@ p {
     width: min(100% - 28px, 1080px);
   }
 
-  .nav-links,
+  .nav-links {
+    gap: 8px 10px;
+  }
+
   .footer-links {
     gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
   }
 
   .profile-card,
