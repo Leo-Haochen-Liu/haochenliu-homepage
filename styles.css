@@ -198,6 +198,20 @@ p {
   color: var(--muted);
 }
 
+.goal-box {
+  margin-top: 18px;
+  padding-left: 15px;
+  border-left: 2px solid var(--accent);
+}
+
+.goal-box p {
+  margin-bottom: 0;
+}
+
+.goal-box strong {
+  color: var(--ink);
+}
+
 .news-list {
   display: grid;
   gap: 8px;
