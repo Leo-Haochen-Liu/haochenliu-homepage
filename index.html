@@ -16,10 +16,11 @@
       <a class="brand" href="#top">Haochen Liu</a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about">About</a>
+        <a href="#news">News</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
-        <a href="#writing">Writing</a>
+        <a href="#misc">Misc</a>
         <a href="./assets/CV2026.pdf">CV</a>
       </nav>
     </header>
@@ -28,8 +29,8 @@
       <aside class="profile-card" aria-label="Profile">
         <img class="portrait" src="./assets/portrait.jpg" width="900" height="1200" alt="Portrait of Haochen Liu" />
         <h1>Haochen Liu</h1>
-        <p class="profile-title">Master's student, University of Michigan</p>
-        <p class="profile-focus">Humanoid reinforcement learning, VLA policies, and embodied AI systems.</p>
+        <p class="profile-title">M.S. Student<br />University of Michigan</p>
+        <p class="profile-focus">Robotics · Embodied AI · Humanoid Learning</p>
         <div class="profile-links" aria-label="Profile links">
           <a href="mailto:liuhaoch@umich.edu">Email</a>
           <a href="https://github.com/Leo-Haochen-Liu">GitHub</a>
@@ -40,20 +41,39 @@
 
       <div class="content">
         <section id="about" class="section">
-          <p class="section-kicker">About</p>
-          <h2>Robotics and embodied AI researcher working across policy learning, data conversion, and real-robot deployment.</h2>
+          <h2>About</h2>
           <p>
-            I am a master's student at the University of Michigan School of Information. My current work centers on humanoid
-            reinforcement learning, vision-language-action policy learning, and sim-to-real workflows for embodied AI systems.
+            I am a master's student at the University of Michigan School of Information. Before that, I received my B.A.
+            from Tsinghua University, Academy of Arts and Design.
           </p>
           <p>
-            Recently, I have worked on Unitree G1 soccer motion policies, PrimeU simulation and retargeting pipelines, and
-            human-to-humanoid supervision for high-DoF VLA policy training.
+            My work is centered on robot learning and embodied AI, especially humanoid reinforcement learning, human-to-robot
+            data conversion, VLA policy learning, and real-robot deployment. Recently, I have worked on Unitree G1 soccer
+            motion policies, PrimeU simulation and retargeting pipelines, and human-to-humanoid supervision for high-DoF
+            VLA policy training.
           </p>
         </section>
 
+        <section id="news" class="section">
+          <h2>News</h2>
+          <ul class="news-list">
+            <li>
+              <time>2026.07</time>
+              <span>Our preprint <em>Human-as-Humanoid</em> is available on arXiv.</span>
+            </li>
+            <li>
+              <time>2026.05</time>
+              <span>I started working on humanoid reinforcement learning motion control at DeepCybo.</span>
+            </li>
+            <li>
+              <time>2026</time>
+              <span>Received Kaggle medals in market prediction and multilingual chatbot preference modeling competitions.</span>
+            </li>
+          </ul>
+        </section>
+
         <section id="research" class="section">
-          <p class="section-kicker">Research interests</p>
+          <h2>Research Interests</h2>
           <ul class="interest-list">
             <li>
               <strong>Humanoid reinforcement learning and sim-to-real control.</strong>
@@ -75,34 +95,41 @@
         </section>
 
         <section id="publications" class="section">
-          <p class="section-kicker">Publications</p>
+          <h2>Publications</h2>
           <article class="publication">
             <div class="entry-year">2026</div>
             <div>
               <h3>Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments</h3>
-              <p class="publication-meta">arXiv:2606.32009. Co-author.</p>
+              <p class="authors">
+                Xiaopeng Lin*, Ruoqi Yang*, Shijie Lian*, Zhaolong Shen*, Bin Yu*, Changti Wu, Haibao Liu, Yuxiang Zhang,
+                Hong Li, Qiyuan Su, <strong>Haochen Liu</strong>, Xuguo He, Yukun Shi, Cong Huang, Zhirui Zhang,
+                Bojun Cheng, Kai Chen
+              </p>
+              <p class="publication-meta">arXiv preprint, 2026.</p>
               <p>
-                A human-to-humanoid supervision framework that converts synchronized ego-exo human videos into executable
-                60-DoF humanoid action labels for PrimeU and high-DoF VLA policy training.
+                A human-to-humanoid supervision framework that converts synchronized ego-exo human videos into
+                controller-aligned 60-DoF action labels for PrimeU and high-DoF VLA policy training.
               </p>
               <div class="paper-links" aria-label="Publication links">
                 <a href="./assets/papers/2606.32009v1.pdf">PDF</a>
                 <a href="https://arxiv.org/abs/2606.32009">arXiv</a>
+                <a href="https://zgc-embodyai.github.io/Human-as-Humanoid/">Project</a>
               </div>
             </div>
           </article>
         </section>
 
         <section id="projects" class="section">
-          <p class="section-kicker">Selected projects</p>
+          <h2>Selected Projects</h2>
           <div class="entry-list">
             <article class="entry">
               <div class="entry-year">2026 - present</div>
               <div>
-                <h3>Humanoid RL motion control at DeepCybo</h3>
+                <h3>Humanoid RL motion control</h3>
                 <p>
-                  Worked on Unitree G1 soccer policies and PrimeU RL simulation workflows, including motion retargeting,
-                  policy training, ONNX deployment, real-robot validation, and simulation foundation setup.
+                  Built motion-retargeting and deployment workflows for Unitree G1 soccer policies, including reference
+                  motion conversion, policy training, ONNX export, and real-robot validation; prepared PrimeU simulation
+                  assets for reinforcement-learning training.
                 </p>
               </div>
             </article>
@@ -129,16 +156,16 @@
           </div>
         </section>
 
-        <section id="writing" class="section">
-          <p class="section-kicker">Writing and community</p>
+        <section id="misc" class="section">
+          <h2>Misc</h2>
           <div class="entry-list">
             <article class="entry">
               <div class="entry-year">2026</div>
               <div>
-                <h3>Research communication</h3>
+                <h3>Research writing and community</h3>
                 <p>
-                  Contributor to Tsinghua Moonshot Embodied Intelligence Club and writer for EID Embodied Intelligence
-                  Innovation Center weekly research trend reports, covering robotics and AI paper selection, summaries, and
+                  Author for Tsinghua Moonshot Embodied Intelligence Club submissions and writer for EID Embodied
+                  Intelligence Innovation Center research reports, covering robotics and AI paper selection, summaries, and
                   Chinese technical interpretation.
                 </p>
               </div>
@@ -148,8 +175,8 @@
               <div>
                 <h3>Kaggle competitions</h3>
                 <p>
-                  Silver medal in Kaggle Hull Tactical: Market Prediction (104 / 3677) and bronze medal in Kaggle Drawing
-                  with LLMs (78 / 1309).
+                  Silver medal in Hull Tactical: Market Prediction and bronze medal in WSDM Cup - Multilingual Chatbot
+                  Arena.
                 </p>
               </div>
             </article>
@@ -157,7 +184,7 @@
         </section>
 
         <section id="timeline" class="section">
-          <p class="section-kicker">Education and experience</p>
+          <h2>Education and Experience</h2>
           <div class="timeline">
             <div>
               <span>2025 - present</span>
