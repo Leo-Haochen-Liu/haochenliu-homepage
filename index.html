@@ -1,196 +1,191 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="刘浩辰的个人主页，研究方向包括人形机器人强化学习运动控制、VLA 空间表征奖励和具身智能系统。"
+      content="Haochen Liu's academic homepage for robotics, humanoid reinforcement learning, VLA policy learning, and embodied AI research."
     />
-    <title>刘浩辰 | 机器人强化学习与具身智能</title>
+    <title>Haochen Liu | Robotics and Embodied AI</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top">刘浩辰</a>
-      <nav class="nav-links" aria-label="主导航">
-        <a href="#research">研究方向</a>
-        <a href="#publications">论文</a>
-        <a href="#work">项目经历</a>
-        <a href="#writing">写作与社区</a>
-        <a href="./assets/CV2026.pdf">简历</a>
+      <a class="brand" href="#top">Haochen Liu</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="./assets/CV2026.pdf">CV</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">机器人强化学习 · 具身智能 · 多模态策略学习</p>
-          <h1>刘浩辰</h1>
-          <p class="lead">
-            密歇根大学信息学院硕士在读，研究人形机器人强化学习运动控制、VLA 空间表征奖励，以及具身智能系统的仿真到真机部署。近期在深度机智参与 Unitree G1 踢球策略训练与真机部署，并推进 PrimeU 强化学习仿真和动作重定向流程。
+    <main id="top" class="page-shell">
+      <aside class="profile-card" aria-label="Profile">
+        <img class="portrait" src="./assets/portrait.jpg" width="900" height="1200" alt="Portrait of Haochen Liu" />
+        <h1>Haochen Liu</h1>
+        <p class="profile-title">Master's student, University of Michigan</p>
+        <p class="profile-focus">Humanoid reinforcement learning, VLA policies, and embodied AI systems.</p>
+        <div class="profile-links" aria-label="Profile links">
+          <a href="mailto:liuhaoch@umich.edu">Email</a>
+          <a href="https://github.com/Leo-Haochen-Liu">GitHub</a>
+          <a href="https://www.kaggle.com/haochenliu001824/competitions">Kaggle</a>
+          <a href="./assets/CV2026.pdf">CV</a>
+        </div>
+      </aside>
+
+      <div class="content">
+        <section id="about" class="section">
+          <p class="section-kicker">About</p>
+          <h2>Robotics and embodied AI researcher working across policy learning, data conversion, and real-robot deployment.</h2>
+          <p>
+            I am a master's student at the University of Michigan School of Information. My current work centers on humanoid
+            reinforcement learning, vision-language-action policy learning, and sim-to-real workflows for embodied AI systems.
           </p>
-          <div class="link-row" aria-label="个人链接">
-            <a href="mailto:liuhaoch@umich.edu">邮箱</a>
-            <a href="https://github.com/Leo-Haochen-Liu">GitHub</a>
-            <a href="https://www.kaggle.com/haochenliu001824/competitions">Kaggle</a>
-            <a href="./assets/CV2026.pdf">简历</a>
-          </div>
-        </div>
-        <div class="hero-media" aria-label="个人照片">
-          <img class="portrait" src="./assets/portrait.jpg" width="900" height="1200" alt="刘浩辰照片" />
-        </div>
-      </section>
+          <p>
+            Recently, I have worked on Unitree G1 soccer motion policies, PrimeU simulation and retargeting pipelines, and
+            human-to-humanoid supervision for high-DoF VLA policy training.
+          </p>
+        </section>
 
-      <section id="research" class="section">
-        <div class="section-title">
-          <p class="eyebrow">研究方向</p>
-          <h2>面向机器人策略学习，构建数据、奖励与真机部署闭环。</h2>
-        </div>
-        <div class="focus-grid">
-          <article class="focus-item">
-            <h3>人形机器人强化学习运动控制</h3>
-            <p>
-              围绕 Unitree G1 踢球与 PRIME／PrimeU 操作任务，完成动作捕捉、动作重定向、策略训练、物理参数校准与 ONNX 部署。
-            </p>
-          </article>
-          <article class="focus-item">
-            <h3>VLA 强化学习与空间奖励</h3>
-            <p>
-              基于 OpenVLA-OFT、SimpleVLA-RL 与 LIBERO-10，探索用空间表征奖励缓解稀疏奖励问题，并在有限算力下完成离线 RL 验证。
-            </p>
-          </article>
-          <article class="focus-item">
-            <h3>评测与数据构建</h3>
-            <p>
-              负责仿真 rollout 与失败样本构建，配合 leak-safe 验证和 benchmark 迭代，强调结果可复现、结论可追溯。
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="publications" class="section">
-        <div class="section-title compact">
-          <p class="eyebrow">论文</p>
-          <h2>预印本与合作研究</h2>
-        </div>
-        <article class="publication-item">
-          <div class="publication-meta">arXiv:2606.32009 · 2026</div>
-          <div class="publication-body">
-            <h3>Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments</h3>
-            <p>
-              作者之一。工作围绕 PrimeU 60-DoF 人形机器人，将同步 ego-exo 人类视频转化为可执行动作监督，用于高自由度 VLA 策略训练与真实机器人验证。
-            </p>
-            <div class="paper-links" aria-label="论文链接">
-              <a href="./assets/papers/2606.32009v1.pdf">PDF</a>
-              <a href="https://arxiv.org/abs/2606.32009">arXiv</a>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section id="work" class="section">
-        <div class="section-title compact">
-          <p class="eyebrow">项目经历</p>
-          <h2>近期研究与工程项目</h2>
-        </div>
-        <div class="work-list">
-          <article class="work-item">
-            <div class="work-date">2026.05 - 至今</div>
-            <div class="work-body">
-              <h3>深度机智：人形机器人强化学习运动控制</h3>
-              <p>
-                参与 Unitree G1 踢球策略与 PrimeU 强化学习仿真流程，负责动作重定向、策略训练、ONNX 部署、真机验证和仿真基础整理。
-              </p>
-              <ul>
-                <li>基于 GVHMR／GMR／BeyondMimic 完成视频动作捕捉、重定向与策略训练。</li>
-                <li>交付可在宇树 G1 真机流畅运行完整射门动作的 policy，并完成 ONNX 部署验证。</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <div class="work-date">2026.03 - 2026.04</div>
-            <div class="work-body">
-              <h3>SpaRe-lite：面向 VLA 强化学习的空间表征奖励</h3>
-              <p>
-                在 EECS 545 Final Project 中主导 SpaRe-lite 小组项目，在有限算力下验证空间表征奖励对 VLA 稀疏奖励任务的增益。
-              </p>
-              <ul>
-                <li>通过仿真自建包含失败样本的 409 条离线 rollout transition 数据。</li>
-                <li>LIBERO-10 成功率由 SFT 16.13% 提升至加入空间奖励后的 18.40%。</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <div class="work-date">2025.02 - 2025.04</div>
-            <div class="work-body">
-              <h3>机器人产品系统与具身交互</h3>
-              <p>
-                早期工业设计工作聚焦全尺寸人形机器人与仿生机器人产品，积累了对机器人本体结构、外观约束和部署边界的判断。
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section split">
-        <div id="writing" class="panel">
-          <p class="eyebrow">写作与社区</p>
-          <h2>科研传播</h2>
-          <ul class="plain-list">
+        <section id="research" class="section">
+          <p class="section-kicker">Research interests</p>
+          <ul class="interest-list">
             <li>
-              清华探月具身智能俱乐部《探月技术洞察｜科研一周趋势》投稿作者，负责机器人与 AI 论文筛选、摘要撰写和中文解读。
+              <strong>Humanoid reinforcement learning and sim-to-real control.</strong>
+              Motion capture, retargeting, policy training, ONNX deployment, and real-robot validation for humanoid motion.
             </li>
             <li>
-              EID 具身智能创新中心《EID 洞察｜科研一周趋势》撰稿人，负责周报选题、资料整理与中文稿件撰写。
+              <strong>Human-to-humanoid data conversion.</strong>
+              Ego-exo video pipelines, action retargeting, and executable high-DoF supervision for humanoid VLA training.
+            </li>
+            <li>
+              <strong>Spatial rewards for VLA policies.</strong>
+              Offline RL with spatial representation rewards for sparse-reward manipulation tasks under limited compute.
+            </li>
+            <li>
+              <strong>Evaluation and data construction.</strong>
+              Simulation rollout construction, failure data, leak-safe validation, and benchmark-driven iteration.
             </li>
           </ul>
-        </div>
-        <div class="panel">
-          <p class="eyebrow">算法竞赛</p>
-          <h2>公开榜单验证</h2>
-          <ul class="plain-list">
-            <li>Kaggle Hull Tactical：Market Prediction，银牌，104／3677。</li>
-            <li>Kaggle Drawing with LLMs，铜牌，78／1309。</li>
-          </ul>
-        </div>
-      </section>
+        </section>
 
-      <section class="section timeline-section">
-        <div class="section-title compact">
-          <p class="eyebrow">时间线</p>
-          <h2>教育与主要经历</h2>
-        </div>
-        <div class="timeline">
-          <div>
-            <span>2025 - 至今</span>
-            <p>密歇根大学安娜堡分校－信息学院，信息学硕士（大数据分析）。</p>
+        <section id="publications" class="section">
+          <p class="section-kicker">Publications</p>
+          <article class="publication">
+            <div class="entry-year">2026</div>
+            <div>
+              <h3>Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments</h3>
+              <p class="publication-meta">arXiv:2606.32009. Co-author.</p>
+              <p>
+                A human-to-humanoid supervision framework that converts synchronized ego-exo human videos into executable
+                60-DoF humanoid action labels for PrimeU and high-DoF VLA policy training.
+              </p>
+              <div class="paper-links" aria-label="Publication links">
+                <a href="./assets/papers/2606.32009v1.pdf">PDF</a>
+                <a href="https://arxiv.org/abs/2606.32009">arXiv</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="projects" class="section">
+          <p class="section-kicker">Selected projects</p>
+          <div class="entry-list">
+            <article class="entry">
+              <div class="entry-year">2026 - present</div>
+              <div>
+                <h3>Humanoid RL motion control at DeepCybo</h3>
+                <p>
+                  Worked on Unitree G1 soccer policies and PrimeU RL simulation workflows, including motion retargeting,
+                  policy training, ONNX deployment, real-robot validation, and simulation foundation setup.
+                </p>
+              </div>
+            </article>
+            <article class="entry">
+              <div class="entry-year">2026</div>
+              <div>
+                <h3>SpaRe-lite: spatial representation rewards for VLA reinforcement learning</h3>
+                <p>
+                  Led an EECS 545 final project on offline RL for VLA sparse-reward tasks. Built 409 simulation rollout
+                  transitions with failure samples and improved LIBERO-10 success rate from 16.13% SFT to 18.40%.
+                </p>
+              </div>
+            </article>
+            <article class="entry">
+              <div class="entry-year">2025</div>
+              <div>
+                <h3>Prime humanoid body design and embodiment constraints</h3>
+                <p>
+                  Worked on full-size humanoid body design with Zhongguancun Academy and Zhongguancun Institute of
+                  Artificial Intelligence, connecting industrial design experience with embodied AI deployment constraints.
+                </p>
+              </div>
+            </article>
           </div>
-          <div>
-            <span>2026.05 - 至今</span>
-            <p>深度机智（北京）科技有限公司，机器人强化学习运动控制。</p>
+        </section>
+
+        <section id="writing" class="section">
+          <p class="section-kicker">Writing and community</p>
+          <div class="entry-list">
+            <article class="entry">
+              <div class="entry-year">2026</div>
+              <div>
+                <h3>Research communication</h3>
+                <p>
+                  Contributor to Tsinghua Moonshot Embodied Intelligence Club and writer for EID Embodied Intelligence
+                  Innovation Center weekly research trend reports, covering robotics and AI paper selection, summaries, and
+                  Chinese technical interpretation.
+                </p>
+              </div>
+            </article>
+            <article class="entry">
+              <div class="entry-year">2025 - 2026</div>
+              <div>
+                <h3>Kaggle competitions</h3>
+                <p>
+                  Silver medal in Kaggle Hull Tactical: Market Prediction (104 / 3677) and bronze medal in Kaggle Drawing
+                  with LLMs (78 / 1309).
+                </p>
+              </div>
+            </article>
           </div>
-          <div>
-            <span>2025.04 - 2025.09</span>
-            <p>北京中关村学院 × 中关村人工智能研究院，Prime 全尺寸人形机器人本体设计。</p>
+        </section>
+
+        <section id="timeline" class="section">
+          <p class="section-kicker">Education and experience</p>
+          <div class="timeline">
+            <div>
+              <span>2025 - present</span>
+              <p>University of Michigan, School of Information, M.S. in Information.</p>
+            </div>
+            <div>
+              <span>2026 - present</span>
+              <p>DeepCybo, humanoid reinforcement learning motion control.</p>
+            </div>
+            <div>
+              <span>2025</span>
+              <p>Zhongguancun Academy x Zhongguancun Institute of Artificial Intelligence, Prime humanoid body design.</p>
+            </div>
+            <div>
+              <span>2018 - 2024</span>
+              <p>Tsinghua University, Academy of Arts and Design, B.A. in Industrial Design.</p>
+            </div>
           </div>
-          <div>
-            <span>2018.09 - 2024.07</span>
-            <p>清华大学美术学院，艺术学学士（工业设计）。</p>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <p>刘浩辰</p>
+      <p>Haochen Liu</p>
       <div class="footer-links">
         <a href="mailto:liuhaoch@umich.edu">liuhaoch@umich.edu</a>
         <a href="https://www.instagram.com/liuhaochenfred/">Instagram</a>
-        <a href="https://www.xiaohongshu.com/user/profile/5a094aa04eacab60354412e6">小红书</a>
+        <a href="https://www.xiaohongshu.com/user/profile/5a094aa04eacab60354412e6">Xiaohongshu</a>
       </div>
     </footer>
   </body>
