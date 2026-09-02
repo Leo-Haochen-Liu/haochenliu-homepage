@@ -167,6 +167,11 @@ img {
   font-size: 0.95rem;
 }
 
+.profile-prior-degree {
+  display: inline-block;
+  margin-top: 4px;
+}
+
 .profile-links {
   display: grid;
   gap: 6px;
