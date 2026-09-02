@@ -167,9 +167,12 @@ img {
   font-size: 0.95rem;
 }
 
-.profile-prior-degree {
-  display: inline-block;
-  margin-top: 4px;
+.profile-education-entry {
+  display: block;
+}
+
+.profile-education-entry + .profile-education-entry {
+  margin-top: 8px;
 }
 
 .profile-links {
