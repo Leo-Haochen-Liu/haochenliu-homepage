@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Haochen Liu's academic homepage for robotics, humanoid robot reinforcement learning, VLA policy learning, and embodied AI research."
+      content="Haochen Liu's academic homepage for humanoid robot whole-body control, VLA policy learning, and embodied AI research."
     />
     <title>Haochen Liu | Robotics and Embodied AI</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
@@ -16,10 +16,11 @@
       <a class="brand" href="#top">Haochen Liu</a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
         <a href="#soccer">Soccer</a>
+        <a href="#publications">Publications</a>
+        <a href="#background">Background</a>
+        <a href="#research">Research</a>
+        <a href="#news">News</a>
         <a href="#projects">Projects</a>
         <a href="#misc">Misc</a>
         <a href="./assets/CV2026.pdf">CV</a>
@@ -30,12 +31,12 @@
       <aside class="profile-card" aria-label="Profile">
         <img class="portrait" src="./assets/portrait.jpg" width="900" height="1200" alt="Portrait of Haochen Liu" />
         <h1>Haochen Liu</h1>
-        <p class="profile-title">M.S. Student<br />University of Michigan</p>
-        <p class="profile-focus">Robotics · Embodied AI · Humanoid Robot Learning</p>
+        <p class="profile-title">M.S. Student<br /><a class="profile-affiliation-link" href="https://umich.edu/" target="_blank" rel="noopener noreferrer">University of Michigan</a></p>
+        <p class="profile-focus">Humanoid Robot Whole-Body Control Engineer · Embodied AI<br />Former Humanoid Robot Industrial Designer</p>
         <div class="profile-links" aria-label="Profile links">
           <a href="mailto:liuhaoch@umich.edu">Email</a>
           <a href="https://github.com/Leo-Haochen-Liu">GitHub</a>
-          <a href="https://www.xiaohongshu.com/user/profile/5a094aa04eacab60354412e6">RedNote</a>
+          <a href="https://www.xiaohongshu.com/user/profile/5a094aa04eacab60354412e6" target="_blank" rel="noopener noreferrer">RedNote</a>
           <a href="./assets/CV2026.pdf">CV</a>
         </div>
       </aside>
@@ -44,21 +45,80 @@
         <section id="about" class="section">
           <h2>About</h2>
           <p>
-            I am a master's student at the University of Michigan School of Information. Before that, I received my B.A.
-            from Tsinghua University, Academy of Arts and Design.
+            I am a master's student at the
+            <a class="inline-link" href="https://si.umich.edu/" target="_blank" rel="noopener noreferrer">University of Michigan School of Information</a>
+            and a former humanoid robot industrial designer, now working on whole-body control for humanoid robots and
+            human-to-humanoid motion retargeting. At
+            <a class="inline-link" href="https://x.com/DeepCybo" target="_blank" rel="noopener noreferrer">DeepCybo</a>,
+            I developed an end-to-end soccer
+            motion pipeline for the <a class="inline-link" href="https://www.unitree.com/g1/" target="_blank" rel="noopener noreferrer">Unitree G1</a>,
+            spanning human-and-ball motion capture, retargeting, controller training, simulation-to-real deployment, and
+            physical-robot shooting tests.
           </p>
           <p>
-            My work is centered on robot learning and embodied AI, especially humanoid robot reinforcement learning, human-to-robot
-            data conversion, VLA policy learning, and real-robot deployment. Recently, I have worked on Unitree G1 soccer
-            motion policies, PrimeU simulation and retargeting pipelines, and human-to-robot supervision for high-DoF
-            humanoid robot VLA policy training.
+            I am also a co-author of
+            <a class="inline-link" href="https://zgc-embodyai.github.io/Human-as-Humanoid/" target="_blank" rel="noopener noreferrer"><em>Human-as-Humanoid</em></a>.
+            I contributed to its
+            motion-retargeting pipeline, which converts recovered human motion into controller-aligned 60-DoF action
+            labels for the <a class="inline-link" href="https://zgc-embodyai.github.io/Human-as-Humanoid/" target="_blank" rel="noopener noreferrer">PrimeU</a>
+            upper-body humanoid robot. Together, these projects connect motion data, whole-body
+            control, and physical deployment across two humanoid robot platforms.
           </p>
           <div class="goal-box">
             <p>
-              <strong>Goal:</strong> Use robots, especially humanoid robots, as physical interfaces that help AI
-              systems better understand and act in the world.
+              <strong>Goal:</strong> Build whole-body control and embodied-AI systems that enable general-purpose
+              humanoid robots to perceive, adapt, and act in the physical world.
             </p>
           </div>
+        </section>
+
+        <section id="background" class="section">
+          <h2>How I Got Here</h2>
+          <p>
+            Although my current work focuses on control algorithms for humanoid robots, my undergraduate training was in
+            industrial design at the
+            <a class="inline-link" href="https://www.enad.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer">Academy of Arts &amp; Design, Tsinghua University</a>.
+            I first worked on automotive interiors at
+            <a class="inline-link" href="https://www.gm.com.cn/en/home/company/operations.html" target="_blank" rel="noopener noreferrer">Pan Asia Technical Automotive Center (PATAC)</a>,
+            the automotive engineering and design joint venture between
+            <a class="inline-link" href="https://www.saicmotor.com/english/" target="_blank" rel="noopener noreferrer">SAIC Motor</a>
+            and <a class="inline-link" href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">General Motors</a>.
+          </p>
+          <p>
+            In early 2025, I moved into humanoid robot design at
+            <a class="inline-link" href="https://www.noetixrobotics.com/en" target="_blank" rel="noopener noreferrer">Noetix Robotics</a>,
+            where I worked on the industrial design of the
+            <a class="inline-link" href="https://www.noetixrobotics.com/en/detail/XN" target="_blank" rel="noopener noreferrer">Xiaonuo</a>
+            bionic humanoid robot. I later led the industrial design of the
+            <a class="inline-link" href="#design-origins">Prime</a> full-size humanoid robot while working with
+            <a class="inline-link" href="https://www.bza.edu.cn/" target="_blank" rel="noopener noreferrer">Zhongguancun Academy</a>
+            and <a class="inline-link" href="https://www.zgci.ac.cn/" target="_blank" rel="noopener noreferrer">Zhongguancun Institute of Artificial Intelligence</a>.
+            When the project became
+            <a class="inline-link" href="https://x.com/DeepCybo" target="_blank" rel="noopener noreferrer">DeepCybo</a>,
+            I was among its earliest team members and joined
+            the founders in early investor meetings. Those conversations repeatedly returned to the same question: what
+            intelligence would make the robot genuinely useful? That question convinced me to move from designing the
+            robot's body to developing the algorithms that control it.
+          </p>
+          <p>
+            I entered this transition with undergraduate foundations in mathematics and C programming, a score of 145/150
+            on the mathematics section of China's national college entrance examination, and confidence in my ability to
+            learn unfamiliar subjects. I studied machine learning through
+            <a class="inline-link" href="https://web.ee.ntu.edu.tw/course_detail.php?CA_ID=8450" target="_blank" rel="noopener noreferrer">Professor Hung-yi Lee's Machine Learning course</a>
+            at <a class="inline-link" href="https://www.ntu.edu.tw/english/" target="_blank" rel="noopener noreferrer">National Taiwan University</a>,
+            then took <a class="inline-link" href="https://bulletin.engin.umich.edu/courses/eecs/" target="_blank" rel="noopener noreferrer">EECS 545: Machine Learning</a>
+            at the University of Michigan. My final project,
+            <a class="inline-link" href="https://github.com/Leo-Haochen-Liu/spare-lite-libero10-offline-rl" target="_blank" rel="noopener noreferrer">SpaRe-lite</a>,
+            explored spatial-representation rewards for sparse-reward reinforcement learning in the
+            <a class="inline-link" href="https://libero-project.github.io/main.html" target="_blank" rel="noopener noreferrer">LIBERO</a>
+            simulation benchmark. On <a class="inline-link" href="https://www.xiaohongshu.com/user/profile/5a094aa04eacab60354412e6" target="_blank" rel="noopener noreferrer">RedNote</a>,
+            I continue this process by explaining recent robotics and embodied-AI
+            papers and tracing unfamiliar ideas back through their prerequisite literature. When I returned to
+            <a class="inline-link" href="https://x.com/DeepCybo" target="_blank" rel="noopener noreferrer">DeepCybo</a>
+            in May 2026, my experience with reinforcement learning and my long-standing love of soccer led naturally to
+            the <a class="inline-link" href="https://www.unitree.com/g1/" target="_blank" rel="noopener noreferrer">Unitree G1</a>
+            soccer project presented above.
+          </p>
         </section>
 
         <section id="news" class="section">
@@ -66,11 +126,11 @@
           <ul class="news-list">
             <li>
               <time>2026.07</time>
-              <span>Our preprint <em>Human-as-Humanoid</em> is available on arXiv.</span>
+              <span>Our preprint <a class="inline-link" href="https://arxiv.org/abs/2606.32009" target="_blank" rel="noopener noreferrer"><em>Human-as-Humanoid</em></a> is available on arXiv.</span>
             </li>
             <li>
               <time>2026.05</time>
-              <span>I started working on whole-body control for humanoid robots at DeepCybo.</span>
+              <span>I started working on whole-body control for humanoid robots at <a class="inline-link" href="https://x.com/DeepCybo" target="_blank" rel="noopener noreferrer">DeepCybo</a>.</span>
             </li>
           </ul>
         </section>
@@ -79,15 +139,20 @@
           <h2>Research Interests</h2>
           <ul class="interest-list">
             <li>
-              <strong>Humanoid robot reinforcement learning and sim-to-real control.</strong>
-              Motion capture, retargeting, policy training, ONNX deployment, and real-robot validation for humanoid robot motion.
+              <strong>Whole-body control for humanoid robots.</strong>
+              Motion capture, retargeting, policy training, sim-to-real deployment, and physical-robot validation.
             </li>
             <li>
-              <strong>Human-to-robot data conversion for humanoid robots.</strong>
-              Ego-exo video pipelines, action retargeting, and executable high-DoF supervision for humanoid robot VLA training.
+              <strong>Human-to-humanoid motion retargeting.</strong>
+              Ego-exo video pipelines, action retargeting, and executable high-DoF supervision for humanoid robot
+              vision-language-action (VLA) training.
             </li>
             <li>
-              <strong>Spatial rewards for VLA policies.</strong>
+              <strong>Egocentric visual perception for humanoid robot soccer.</strong>
+              Onboard ball and goal localization for closed-loop approach, whole-body control, and shooting.
+            </li>
+            <li>
+              <strong><a class="heading-link" href="https://github.com/Leo-Haochen-Liu/spare-lite-libero10-offline-rl" target="_blank" rel="noopener noreferrer">Spatial rewards for VLA policies.</a></strong>
               Offline RL with spatial representation rewards for sparse-reward manipulation tasks under limited compute.
             </li>
             <li>
@@ -102,7 +167,7 @@
           <article class="publication">
             <div class="entry-year">2026</div>
             <div>
-              <h3>Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments</h3>
+              <h3><a class="heading-link" href="https://zgc-embodyai.github.io/Human-as-Humanoid/" target="_blank" rel="noopener noreferrer">Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments</a></h3>
               <p class="authors">
                 Xiaopeng Lin*, Ruoqi Yang*, Shijie Lian*, Zhaolong Shen*, Bin Yu*, Changti Wu, Haibao Liu, Yuxiang Zhang,
                 Hong Li, Qiyuan Su, <strong>Haochen Liu</strong>, Xuguo He, Yukun Shi, Cong Huang, Zhirui Zhang,
@@ -111,7 +176,9 @@
               <p class="publication-meta">arXiv preprint, 2026.</p>
               <p>
                 A supervision framework for humanoid robots that converts synchronized ego-exo human videos into
-                controller-aligned 60-DoF action labels for PrimeU and high-DoF VLA policy training.
+                controller-aligned 60-DoF action labels for
+                <a class="inline-link" href="https://zgc-embodyai.github.io/Human-as-Humanoid/" target="_blank" rel="noopener noreferrer">PrimeU</a>
+                and high-DoF VLA policy training.
               </p>
               <div class="paper-links" aria-label="Publication links">
                 <a href="./assets/papers/2606.32009v1.pdf">PDF</a>
@@ -123,18 +190,23 @@
         </section>
 
         <section id="soccer" class="section">
-          <p class="section-kicker">DeepCybo internship · 2026 - present</p>
-          <h2>Humanoid Robot Soccer on Unitree G1</h2>
+          <p class="section-kicker"><a class="kicker-link" href="https://x.com/DeepCybo" target="_blank" rel="noopener noreferrer">DeepCybo</a> internship · 2026 - present</p>
+          <h2>Humanoid Robot Soccer on <a class="heading-link" href="https://www.unitree.com/g1/" target="_blank" rel="noopener noreferrer">Unitree G1</a></h2>
           <p class="project-lede">
-            I am developing a soccer-motion pipeline for Unitree G1, spanning synchronized human-and-ball motion capture,
-            motion retargeting, physics review, reinforcement-learning tracking, ONNX export, and physical-robot validation.
+            I am developing a soccer-motion pipeline for the
+            <a class="inline-link" href="https://www.unitree.com/g1/" target="_blank" rel="noopener noreferrer">Unitree G1</a>,
+            spanning synchronized human-and-ball motion capture, motion retargeting, physics review,
+            reinforcement-learning tracking, <a class="inline-link" href="https://onnx.ai/" target="_blank" rel="noopener noreferrer">ONNX</a>
+            export, and physical-robot validation.
             The current corpus contains 5.20 hours of raw capture. After quality control and independent segmentation, the
             V48 training set contains 104 recordings and 238 continuous segments (4 h 09 min, or 8 h 18 min with
             left-right mirroring).
           </p>
           <div class="project-status" aria-label="Current project status">
             <p>
-              <strong>Latest tracking result.</strong> A 30.26-second single-motion BeyondMimic acceptance run completed a
+              <strong>Latest tracking result.</strong> A 30.26-second single-motion
+              <a class="inline-link" href="https://beyondmimic.github.io/" target="_blank" rel="noopener noreferrer">BeyondMimic</a>
+              acceptance run completed a
               full rollout, with 99.22% of final training episodes reaching the time limit. This stage evaluates the
               whole-body motion tracker without ball rigid-body dynamics.
             </p>
@@ -193,7 +265,8 @@
               <div class="video-copy">
                 <h3>Physics-controlled ball RL rollout</h3>
                 <p>
-                  A BeyondMimic rollout with an independently simulated rigid-body ball. This is the strongest stage
+                  A <a class="inline-link" href="https://beyondmimic.github.io/" target="_blank" rel="noopener noreferrer">BeyondMimic</a>
+                  rollout with an independently simulated rigid-body ball. This is the strongest stage
                   result from that training branch, although repeated foot-ball contacts are not yet stable across
                   fixed-seed evaluations.
                 </p>
@@ -202,9 +275,10 @@
 
             <article class="real-robot-block">
               <div class="real-robot-intro">
-                <h3>Physical Unitree G1 shooting tests</h3>
+                <h3>Physical <a class="heading-link" href="https://www.unitree.com/g1/" target="_blank" rel="noopener noreferrer">Unitree G1</a> shooting tests</h3>
                 <p>
-                  Six clips share this description: real-robot validation of the ONNX-deployed soccer-shooting policy
+                  Six clips share this description: real-robot validation of the
+                  <a class="inline-link" href="https://onnx.ai/" target="_blank" rel="noopener noreferrer">ONNX</a>-deployed soccer-shooting policy
                   from several camera views. The first two clips document the first shooting test, and the final vertical
                   clip also includes the corresponding human reference. Drag or swipe horizontally to view all clips.
                 </p>
@@ -268,20 +342,29 @@
             <article class="entry">
               <div class="entry-year">2026</div>
               <div>
-                <h3>SpaRe-lite: spatial representation rewards for VLA reinforcement learning</h3>
+                <h3><a class="heading-link" href="https://github.com/Leo-Haochen-Liu/spare-lite-libero10-offline-rl" target="_blank" rel="noopener noreferrer">SpaRe-lite: spatial representation rewards for VLA reinforcement learning</a></h3>
                 <p>
-                  Led an EECS 545 final project on offline RL for VLA sparse-reward tasks. Built 409 simulation rollout
-                  transitions with failure samples and improved LIBERO-10 success rate from 16.13% SFT to 18.40%.
+                  Led an <a class="inline-link" href="https://bulletin.engin.umich.edu/courses/eecs/" target="_blank" rel="noopener noreferrer">EECS 545: Machine Learning</a>
+                  final project on offline reinforcement learning for VLA sparse-reward tasks. Built 409 simulation rollout
+                  transitions with failure samples and improved
+                  <a class="inline-link" href="https://libero-project.github.io/main.html" target="_blank" rel="noopener noreferrer">LIBERO-10</a> success
+                  rate from 16.13% after supervised fine-tuning (SFT) to 18.40%.
                 </p>
+                <div class="paper-links" aria-label="SpaRe-lite project links">
+                  <a href="https://github.com/Leo-Haochen-Liu/spare-lite-libero10-offline-rl" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://huggingface.co/Haozhan72/Openvla-oft-SFT-libero10-traj1" target="_blank" rel="noopener noreferrer">Hugging Face · SFT baseline</a>
+                  <a href="https://huggingface.co/Haozhan72/openvla-oft-libero10-traj1-rl" target="_blank" rel="noopener noreferrer">Hugging Face · post-RL baseline</a>
+                </div>
               </div>
             </article>
             <article class="entry">
               <div class="entry-year">2025</div>
               <div>
-                <h3>Prime humanoid robot body design and embodiment constraints</h3>
+                <h3><a class="heading-link" href="#design-origins">Prime full-size humanoid robot</a></h3>
                 <p>
-                  Worked on full-size humanoid robot body design with Zhongguancun Academy and Zhongguancun Institute of
-                  Artificial Intelligence, connecting industrial design experience with embodied AI deployment constraints.
+                  Led the industrial design of Prime, from its form language and exterior surfaces to packaging integration
+                  and the final realized prototype. This experience became the bridge from my design background to embodied
+                  intelligence and whole-body control.
                 </p>
               </div>
             </article>
@@ -296,9 +379,9 @@
               <div>
                 <h3>Research writing and community</h3>
                 <p>
-                  Author for Tsinghua Moonshot Embodied Intelligence Club submissions and writer for EID Embodied
-                  Intelligence Innovation Center research reports, covering robotics and AI paper selection, summaries, and
-                  Chinese technical interpretation.
+                  Author of Chinese-language robotics research briefs for the Tsinghua MBA club focused on embodied
+                  intelligence, and writer for EID research reports, covering paper selection, summaries, and technical
+                  interpretation.
                 </p>
               </div>
             </article>
@@ -310,21 +393,129 @@
           <div class="timeline">
             <div>
               <span>2025 - present</span>
-              <p>University of Michigan, School of Information, M.S. in Information.</p>
+              <p><a class="inline-link" href="https://si.umich.edu/" target="_blank" rel="noopener noreferrer">University of Michigan School of Information</a>, Master of Science in Information.</p>
             </div>
             <div>
               <span>2026 - present</span>
-              <p>DeepCybo, whole-body control for humanoid robots.</p>
+              <p><a class="inline-link" href="https://x.com/DeepCybo" target="_blank" rel="noopener noreferrer">DeepCybo</a>, whole-body control for humanoid robots.</p>
             </div>
             <div>
               <span>2025</span>
-              <p>Zhongguancun Academy x Zhongguancun Institute of Artificial Intelligence, Prime humanoid robot body design.</p>
+              <p><a class="inline-link" href="https://x.com/DeepCybo" target="_blank" rel="noopener noreferrer">DeepCybo</a>, <a class="inline-link" href="https://www.bza.edu.cn/" target="_blank" rel="noopener noreferrer">Zhongguancun Academy</a>, and <a class="inline-link" href="https://www.zgci.ac.cn/" target="_blank" rel="noopener noreferrer">Zhongguancun Institute of Artificial Intelligence</a>, industrial design lead for the <a class="inline-link" href="#design-origins">Prime</a> full-size humanoid robot.</p>
+            </div>
+            <div>
+              <span>2025</span>
+              <p><a class="inline-link" href="https://www.noetixrobotics.com/en" target="_blank" rel="noopener noreferrer">Noetix Robotics</a>, industrial design for the <a class="inline-link" href="https://www.noetixrobotics.com/en/detail/XN" target="_blank" rel="noopener noreferrer">Xiaonuo</a> bionic humanoid robot.</p>
+            </div>
+            <div>
+              <span>2021 - 2022</span>
+              <p><a class="inline-link" href="https://www.gm.com.cn/en/home/company/operations.html" target="_blank" rel="noopener noreferrer">Pan Asia Technical Automotive Center (PATAC)</a>, automotive interior design.</p>
             </div>
             <div>
               <span>2018 - 2024</span>
-              <p>Tsinghua University, Academy of Arts and Design, B.A. in Industrial Design.</p>
+              <p><a class="inline-link" href="https://www.enad.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer">Academy of Arts &amp; Design, Tsinghua University</a>, B.A. in Industrial Design.</p>
             </div>
           </div>
+        </section>
+
+        <section id="design-origins" class="section">
+          <p class="section-kicker">Design origins · 2025</p>
+          <h2><a class="heading-link" href="https://leo-haochen-liu.github.io/haochenliu-portfolio/deepcybo-en.html" target="_blank" rel="noopener noreferrer">Prime Full-Size Humanoid Robot</a></h2>
+          <p class="project-lede">
+            Before moving into algorithms, I led the industrial design of Prime at
+            <a class="inline-link" href="https://x.com/DeepCybo" target="_blank" rel="noopener noreferrer">DeepCybo</a>'s
+            earliest stage. The work
+            connected concept development, full-body form language, mechanical packaging, and the final physical prototype.
+            It also made the direction of my next chapter clear: understanding and building the intelligence that gives a
+            humanoid robot useful motion.
+          </p>
+          <details class="project-gallery">
+            <summary class="project-gallery-summary">
+              <span class="project-gallery-cover">
+                <img src="./assets/prime-archive/desktop/177739E0-8C7D-464B-95FB-663CB15800F0.PNG" alt="Prime full-size humanoid robot product rendering" />
+              </span>
+              <span class="project-gallery-summary-copy">
+                <strong>Complete design archive</strong>
+                <span class="gallery-closed-label">89 distinct images · click to expand</span>
+                <span class="gallery-open-label">89 distinct images in 6 groups · swipe horizontally; click an image to open the original</span>
+              </span>
+            </summary>
+            <div class="project-gallery-groups" data-prime-complete-gallery></div>
+          </details>
+
+          <div class="design-project-separator" aria-hidden="true"></div>
+          <p class="section-kicker"><a class="kicker-link" href="https://www.noetixrobotics.com/en" target="_blank" rel="noopener noreferrer">Noetix Robotics</a> · 2025</p>
+          <h2><a class="heading-link" href="https://www.noetixrobotics.com/en/detail/XN" target="_blank" rel="noopener noreferrer">Bionic Robot Xiaonuo</a></h2>
+          <p class="project-lede">
+            At <a class="inline-link" href="https://www.noetixrobotics.com/en" target="_blank" rel="noopener noreferrer">Noetix Robotics</a>,
+            I contributed to the industrial design of the
+            <a class="inline-link" href="https://www.noetixrobotics.com/en/detail/XN" target="_blank" rel="noopener noreferrer">Xiaonuo</a>
+            bionic humanoid robot. My work included the upper-body product identity, torso and neck surfacing,
+            face-and-screen integration, and manufacturable exterior geometry. This was my first direct step from
+            automotive design into humanoid robots.
+          </p>
+          <details class="project-gallery">
+            <summary class="project-gallery-summary">
+              <span class="project-gallery-cover">
+                <img src="./assets/noetix-gallery/official-downloads/xiaonuo-product-portrait.png" alt="Official product portrait of the Xiaonuo bionic humanoid robot" />
+              </span>
+              <span class="project-gallery-summary-copy">
+                <strong>Design gallery</strong>
+                <span class="gallery-closed-label">12 images · click to expand</span>
+                <span class="gallery-open-label">12 images · swipe horizontally; click an image to open the original</span>
+              </span>
+            </summary>
+            <div class="project-gallery-strip" aria-label="Selected Xiaonuo bionic humanoid robot industrial design work">
+              <a class="project-gallery-item" href="./assets/noetix-gallery/official-downloads/xiaonuo-product-portrait.png" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/noetix-gallery/official-downloads/xiaonuo-product-portrait.png" alt="Official product portrait of the Xiaonuo bionic humanoid robot" />
+                <span>Official product portrait · open original ↗</span>
+              </a>
+              <a class="project-gallery-item" href="./assets/noetix-gallery/official-downloads/xiaonuo-profile-concept.png" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/noetix-gallery/official-downloads/xiaonuo-profile-concept.png" alt="Official profile concept image for the Xiaonuo bionic humanoid robot" />
+                <span>Official profile concept · open original ↗</span>
+              </a>
+              <a class="project-gallery-item" href="./assets/noetix-gallery/official-downloads/xiaonuo-livestream.webp" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/noetix-gallery/official-downloads/xiaonuo-livestream.webp" alt="Xiaonuo bionic humanoid robot participating in a livestream demonstration" />
+                <span>Official livestream demonstration · open original ↗</span>
+              </a>
+              <a class="project-gallery-item" href="https://image.noetixrobotics.com/pc/xn_yj.png" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/noetix-gallery/official/xn_yj.png" alt="Official product image of the Xiaonuo bionic humanoid robot" />
+                <span>Official product image · source ↗</span>
+              </a>
+              <a class="project-gallery-item" href="https://image.noetixrobotics.com/pc/xn_cl.png" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/noetix-gallery/official/xn_cl.png" alt="Official side-profile product image of the Xiaonuo bionic humanoid robot" />
+                <span>Official side-profile product image · source ↗</span>
+              </a>
+              <a class="project-gallery-item" href="https://image.noetixrobotics.com/pc/xn_zl.png" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/noetix-gallery/official/xn_zl.png" alt="Official front product image of the Xiaonuo bionic humanoid robot" />
+                <span>Official front product image · source ↗</span>
+              </a>
+              <a class="project-gallery-item" href="https://image.noetixrobotics.com/pc/xn_face.png" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/noetix-gallery/official/xn_face.png" alt="Official facial-detail image of the Xiaonuo bionic humanoid robot" />
+                <span>Official facial-detail image · source ↗</span>
+              </a>
+              <a class="project-gallery-item" href="./assets/noetix-gallery/xiaonuo-development-lab.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/noetix-gallery/xiaonuo-development-lab.jpg" alt="Haochen Liu with the development-stage Xiaonuo prototype in the studio" />
+                <span>Development-stage prototype in the studio · open original ↗</span>
+              </a>
+              <a class="project-gallery-item" href="./assets/noetix-gallery/xiaonuo-final-prototype.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/noetix-gallery/xiaonuo-final-prototype.jpg" alt="Final Xiaonuo bionic humanoid robot prototype at an exhibition" />
+                <span>Final product and upper-body design · open original ↗</span>
+              </a>
+              <a class="project-gallery-item" href="./assets/noetix-gallery/xiaonuo-stage-demo.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/noetix-gallery/xiaonuo-stage-demo.jpg" alt="Xiaonuo bionic humanoid robot presented during a public stage demonstration" />
+                <span>Public stage demonstration · open original ↗</span>
+              </a>
+              <a class="project-gallery-item" href="./assets/noetix-gallery/xiaonuo-iros-display.png" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/noetix-gallery/xiaonuo-iros-display.png" alt="Xiaonuo bionic humanoid robot displayed at iROS Hangzhou 2025" />
+                <span>Product display at iROS Hangzhou 2025 · open original ↗</span>
+              </a>
+              <a class="project-gallery-item" href="./assets/noetix-gallery/xiaonuo-model-three-quarter.png" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/noetix-gallery/xiaonuo-model-three-quarter.png" alt="Three-quarter view of Xiaonuo upper-body surface modeling" />
+                <span>Three-quarter surface development · open original ↗</span>
+              </a>
+            </div>
+          </details>
         </section>
       </div>
     </main>
@@ -334,8 +525,9 @@
       <div class="footer-links">
         <a href="mailto:liuhaoch@umich.edu">liuhaoch@umich.edu</a>
         <a href="https://www.instagram.com/liuhaochenfred/">Instagram</a>
-        <a href="https://www.xiaohongshu.com/user/profile/5a094aa04eacab60354412e6">RedNote</a>
+        <a href="https://www.xiaohongshu.com/user/profile/5a094aa04eacab60354412e6" target="_blank" rel="noopener noreferrer">RedNote</a>
       </div>
     </footer>
+    <script src="./prime-gallery.js"></script>
   </body>
 </html>
