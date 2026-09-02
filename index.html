@@ -19,6 +19,7 @@
         <a href="#news">News</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
+        <a href="#soccer">Soccer</a>
         <a href="#projects">Projects</a>
         <a href="#misc">Misc</a>
         <a href="./assets/CV2026.pdf">CV</a>
@@ -34,7 +35,7 @@
         <div class="profile-links" aria-label="Profile links">
           <a href="mailto:liuhaoch@umich.edu">Email</a>
           <a href="https://github.com/Leo-Haochen-Liu">GitHub</a>
-          <a href="https://www.kaggle.com/haochenliu001824/competitions">Kaggle</a>
+          <a href="https://www.xiaohongshu.com/user/profile/5a094aa04eacab60354412e6">Xiaohongshu</a>
           <a href="./assets/CV2026.pdf">CV</a>
         </div>
       </aside>
@@ -70,10 +71,6 @@
             <li>
               <time>2026.05</time>
               <span>I started working on humanoid reinforcement learning motion control at DeepCybo.</span>
-            </li>
-            <li>
-              <time>2026</time>
-              <span>Received Kaggle medals in market prediction and multilingual chatbot preference modeling competitions.</span>
             </li>
           </ul>
         </section>
@@ -125,20 +122,135 @@
           </article>
         </section>
 
-        <section id="projects" class="section">
-          <h2>Selected Projects</h2>
-          <div class="entry-list">
-            <article class="entry">
-              <div class="entry-year">2026 - present</div>
-              <div>
-                <h3>Humanoid RL motion control</h3>
+        <section id="soccer" class="section">
+          <p class="section-kicker">DeepCybo internship · 2026 - present</p>
+          <h2>Humanoid Soccer on Unitree G1</h2>
+          <p class="project-lede">
+            I am developing a soccer-motion pipeline for Unitree G1, spanning synchronized human-and-ball motion capture,
+            motion retargeting, physics review, reinforcement-learning tracking, ONNX export, and physical-robot validation.
+            The current corpus contains 5.20 hours of raw capture. After quality control and independent segmentation, the
+            V48 training set contains 104 recordings and 238 continuous segments (4 h 09 min, or 8 h 18 min with
+            left-right mirroring).
+          </p>
+          <div class="project-status" aria-label="Current project status">
+            <p>
+              <strong>Latest tracking result.</strong> A 30.26-second single-motion BeyondMimic acceptance run completed a
+              full rollout, with 99.22% of final training episodes reaching the time limit. This stage evaluates the
+              whole-body motion tracker without ball rigid-body dynamics.
+            </p>
+            <p>
+              <strong>Next step.</strong> Couple the learned whole-body controller with ball contact dynamics and egocentric
+              perception so the robot can localize the ball and goal, adjust its support and approach, and execute skills
+              in closed loop.
+            </p>
+          </div>
+
+          <div class="video-grid">
+            <article class="video-card">
+              <video controls playsinline preload="metadata" poster="./assets/videos/g1_kick_simulation.jpg">
+                <source src="./assets/videos/g1_kick_simulation.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <div class="video-copy">
+                <h3>Kick simulation with ball</h3>
+                <p>Goal-directed kick replay with the retargeted G1 motion, ball trajectory, and contact diagnostics.</p>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <video controls playsinline preload="metadata" poster="./assets/videos/g1_kick_ball_retargeting.jpg">
+                <source src="./assets/videos/g1_kick_ball_retargeting.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <div class="video-copy">
+                <h3>Kick retargeting with ball</h3>
                 <p>
-                  Built motion-retargeting and deployment workflows for Unitree G1 soccer policies, including reference
-                  motion conversion, policy training, ONNX export, and real-robot validation; prepared PrimeU simulation
-                  assets for reinforcement-learning training.
+                  A G1 kinematic replay retaining the ball rigid-body trajectory, used to inspect the approach,
+                  support-foot transition, and kick timing.
                 </p>
               </div>
             </article>
+
+            <article class="video-card">
+              <video controls playsinline preload="metadata" poster="./assets/videos/g1_ball_control_reference.jpg">
+                <source src="./assets/videos/g1_ball_control_reference.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <div class="video-copy">
+                <h3>Ball-control reference with rigid-body trajectory</h3>
+                <p>
+                  A 50 Hz physics-review replay of the robot and ball reference. The inspected sequence contains no
+                  foot-ball penetration; it remains a reference trajectory rather than a closed-loop policy.
+                </p>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <video controls playsinline preload="metadata" poster="./assets/videos/g1_ball_rl_rollout.jpg">
+                <source src="./assets/videos/g1_ball_rl_rollout.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <div class="video-copy">
+                <h3>Physics-controlled ball RL rollout</h3>
+                <p>
+                  A BeyondMimic rollout with an independently simulated rigid-body ball. This is the strongest stage
+                  result from that training branch, although repeated foot-ball contacts are not yet stable across
+                  fixed-seed evaluations.
+                </p>
+              </div>
+            </article>
+
+            <article class="real-robot-block">
+              <div class="real-robot-intro">
+                <h3>Physical Unitree G1 kicking tests</h3>
+                <p>
+                  Four clips share this description: real-robot validation of the ONNX-deployed kicking policy from
+                  several camera views. The final vertical clip also includes the corresponding human reference. Drag or
+                  swipe horizontally to view all clips.
+                </p>
+              </div>
+              <div class="real-video-strip" aria-label="Physical Unitree G1 kicking test videos">
+                <figure class="real-video-item">
+                  <video controls playsinline preload="metadata" poster="./assets/videos/g1_real_robot_kick.jpg">
+                    <source src="./assets/videos/g1_real_robot_kick.mp4" type="video/mp4" />
+                    Your browser does not support embedded video.
+                  </video>
+                  <figcaption>Front view</figcaption>
+                </figure>
+                <figure class="real-video-item">
+                  <video controls playsinline preload="metadata" poster="./assets/videos/g1_real_robot_kick_158.jpg">
+                    <source src="./assets/videos/g1_real_robot_kick_158.mp4" type="video/mp4" />
+                    Your browser does not support embedded video.
+                  </video>
+                  <figcaption>Goal-side view</figcaption>
+                </figure>
+                <figure class="real-video-item">
+                  <video controls playsinline preload="metadata" poster="./assets/videos/g1_real_robot_kick_2471.jpg">
+                    <source src="./assets/videos/g1_real_robot_kick_2471.mp4" type="video/mp4" />
+                    Your browser does not support embedded video.
+                  </video>
+                  <figcaption>Side view</figcaption>
+                </figure>
+                <figure class="real-video-item">
+                  <video controls playsinline preload="metadata" poster="./assets/videos/g1_real_robot_kick_vertical.jpg">
+                    <source src="./assets/videos/g1_real_robot_kick_vertical.mp4" type="video/mp4" />
+                    Your browser does not support embedded video.
+                  </video>
+                  <figcaption>Robot and human reference</figcaption>
+                </figure>
+              </div>
+            </article>
+          </div>
+
+          <p class="confidentiality-note">
+            This work was conducted during an industry internship. Videos and high-level results are shared here; source
+            code and implementation details are not publicly released.
+          </p>
+        </section>
+
+        <section id="projects" class="section">
+          <h2>Selected Projects</h2>
+          <div class="entry-list">
             <article class="entry">
               <div class="entry-year">2026</div>
               <div>
@@ -173,16 +285,6 @@
                   Author for Tsinghua Moonshot Embodied Intelligence Club submissions and writer for EID Embodied
                   Intelligence Innovation Center research reports, covering robotics and AI paper selection, summaries, and
                   Chinese technical interpretation.
-                </p>
-              </div>
-            </article>
-            <article class="entry">
-              <div class="entry-year">2025 - 2026</div>
-              <div>
-                <h3>Kaggle competitions</h3>
-                <p>
-                  Silver medal in Hull Tactical: Market Prediction and bronze medal in WSDM Cup - Multilingual Chatbot
-                  Arena.
                 </p>
               </div>
             </article>
